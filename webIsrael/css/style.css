@@ -1,0 +1,730 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'made_tommymedium', sans-serif;
+    background-color: #FFBB44;
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 2rem;
+}
+
+@media (min-width: 1200px) {
+    p {
+        font-size: 3rem;
+    }
+}
+
+
+/* Definir tamano de fuentes si es que se requiere */
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+@media (min-width: 1200px) {
+    a {
+        font-size: 2rem;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*  Utilities */
+
+.section {
+    height: 100vh;
+}
+
+.section-2 {
+    padding-bottom: 10rem;
+}
+
+.section-3 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+
+/* Colors  */
+
+.yellow-background {
+    /* background-color: #ECA338; */
+    background: radial-gradient(#FFBB44, #ECA338);
+}
+
+.yellow-background-nav {
+    background-color: #ECA338;
+}
+
+.rose-background {
+    background: radial-gradient(#DE3D54, #7C2136)
+}
+
+.rose-background-nav {
+    background-color: #7C2136;
+}
+
+.blue-background {
+    background: radial-gradient(#6C4996, #362B5F);
+}
+
+.blue-background-nav {
+    background-color: #362B5F;
+}
+
+.red-background {
+    background: radial-gradient(#F83F39, #881F1B);
+}
+
+.red-background-nav {
+    background-color: #881F1B;
+}
+
+.sky-background {
+    background: radial-gradient(#007aab, #004259);
+}
+
+.sky-background-nav {
+    background-color: #004259;
+}
+
+.container {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.container-desktop {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .container-desktop {
+        width: 90%;
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+}
+
+.title {
+    font-family: 'gotham_ultraitalic', sans-serif;
+    font-size: 5rem;
+    color: #fff;
+    display: block;
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    text-transform: uppercase;
+    width: 85%;
+    height: 85%;
+}
+
+
+/* Title colors */
+
+.title-yellow {
+    text-shadow: 10px 16px 30px #CD6F2E;
+}
+
+.title-rose {
+    text-shadow: 10px 16px 30px #881D1B;
+}
+
+.title-red {
+    text-shadow: 10px 16px 30px #8D1E1C;
+}
+
+.title-blue {
+    text-shadow: 10px 16px 30px #140D25;
+}
+
+.title-sky {
+    text-shadow: 10px 16px 30px #012b3a;
+}
+
+@media (min-width: 600px) {
+    .title {
+        font-size: 6rem;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 7rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .title {
+        font-size: 9rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .title {
+        font-size: 11rem;
+    }
+}
+
+.title-3 {
+    font-size: 4rem;
+    position: relative;
+    left: 0;
+}
+
+.title-2 {
+    font-size: 3rem;
+}
+
+@media (min-width: 600px) {
+    .title-2,
+    .title-3 {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .title-2,
+    .title-3 {
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .title-2,
+    .title-3 {
+        font-size: 8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .title-2,
+    .title-3 {
+        font-size: 10rem;
+    }
+}
+
+.center-elements {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .center-elements-desktop {
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.center-elements-2 {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.columns-2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.element-1 {
+    /* height: 70%; */
+    order: 2;
+}
+
+.element-2 {
+    /* position: absolute; */
+    /* bottom: 10rem; */
+    order: 2;
+}
+
+.branding-container .element-2 {
+    top: 15rem;
+}
+
+@media (min-width: 769px) {
+    .columns-2 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .element-1 {
+        flex-basis: calc(50% - 2rem) !important;
+        margin-right: 4rem;
+    }
+    .element-2 {
+        position: relative;
+        flex-basis: calc(50% - 2rem) !important;
+        margin-left: 4rem;
+        margin-top: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .branding-container .element-2 {
+        top: 0;
+    }
+}
+
+
+/* SITE-HEADER */
+
+
+/* barra */
+
+.bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.bar .container label {
+    cursor: pointer;
+}
+
+.navigation-bar {
+    position: absolute;
+    top: 15rem;
+    left: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    z-index: 3;
+}
+
+.bar a:hover {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transform: translateY(-1rem);
+    -webkit-transform: translateY(-1rem);
+    -moz-transform: translateY(-1rem);
+    -ms-transform: translateY(-1rem);
+    -o-transform: translateY(-1rem);
+    color: #CD6F2E;
+}
+
+.rose-background .bar a:hover {
+    color: #7C2136;
+}
+
+.blue-background .bar a:hover {
+    color: #362B5F;
+}
+
+.red-background .bar a:hover {
+    color: #881F1B;
+}
+
+.sky-background .bar a:hover {
+    color: #004259;
+}
+
+@media (min-width: 768px) {
+    .navigation-bar {
+        position: relative;
+        background: none;
+        top: 0;
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+    }
+    .navigation-bar .web-pages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 1rem;
+    }
+    .navigation-bar .web-pages>li {
+        margin-right: 3rem;
+    }
+    .navigation-bar .web-pages>li:last-of-type {
+        margin-right: 0;
+    }
+}
+
+#btn-menu {
+    display: none;
+}
+
+#btn-menu:checked~.navigation-bar {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+
+.navigation-bar .web-pages li {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .bar .container label {
+        display: none;
+    }
+}
+
+.social-networks {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .social-networks {
+        display: block;
+    }
+    .social-networks ul {
+        display: flex;
+        align-items: center;
+    }
+    .social-networks ul li {
+        margin-right: 2rem;
+    }
+    .social-networks ul li:last-of-type {
+        margin: 0;
+    }
+}
+
+.header-message {
+    height: 80%;
+}
+
+.header-message .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.circles-parallax::before {
+    content: '';
+    width: 100%;
+    height: 400vh;
+    position: absolute;
+    background-image: url(../img/circulos-fondo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: visible;
+    z-index: -2;
+}
+
+.social-networks a img {
+    width: 35px;
+    height: 35px;
+}
+
+
+/* Navigation */
+
+.navigation-bar a {
+    font-size: 1.8rem;
+}
+
+
+/* About US */
+
+.main .element-2 {
+    position: relative;
+}
+
+.descriptive-element p {
+    font-family: 'made_tommylight', sans-serif;
+}
+
+.descriptive-element span {
+    font-family: 'made_tommymedium', sans-serif;
+}
+
+.name {
+    position: relative;
+    bottom: 10rem;
+}
+
+.more-discover .descriptive-element {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .more-discover .descriptive-element {
+        margin-left: 3rem;
+    }
+}
+
+.more-discover .descriptive-element-1 h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+span.title-3 {
+    position: relative;
+    right: 5.5rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 2rem;
+}
+
+.title-animations:hover {
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transform: translatey(-1%);
+    -webkit-transform: translatey(-1%);
+    -moz-transform: translatey(-1%);
+    -ms-transform: translatey(-1%);
+    -o-transform: translatey(-1%);
+}
+
+
+/* Marjeting */
+
+.element-bg {
+    overflow: visible;
+    width: 100%;
+    height: 70vh;
+}
+
+@media (min-width: 768px) {
+    .element-bg {
+        overflow: visible;
+        width: 150%;
+    }
+}
+
+.branding .element-bg {
+    background-image: url(../img/branding-brackground.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: visible;
+}
+
+.publicidad .element-bg {
+    background-image: url(../img/publicidad-background.png);
+    background-position: center center;
+    background-size: cover;
+    overflow: visible;
+}
+
+.marketing .element-bg {
+    background-image: url(../img/marketing-background.png);
+    background-position: center center;
+    background-size: cover;
+    overflow: visible;
+}
+
+.audiovisuales .element-bg {
+    background-image: url(../img/audiovisuales-background.png);
+    background-position: center center;
+    background-size: cover;
+    overflow: visible;
+}
+
+.your-idea {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/focoBackground.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-block: visible;
+    text-align: center;
+}
+
+.your-idea span {}
+
+@media (min-width: 768px) {
+    .your-idea {
+        background-size: 60%;
+    }
+}
+
+.project {
+    margin-bottom: 3rem;
+}
+
+.project:last-of-type {
+    margin-bottom: 0;
+}
+
+.project h2 {
+    text-transform: none;
+}
+
+.service-text {
+    text-align: center;
+    /* position: absolute; */
+}
+
+@media (min-width: 600px) {
+    .project-text {
+        margin-top: 0;
+        text-align: left;
+    }
+}
+
+.cambio {
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 600px) {
+    .cambio {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (min-width: 768px) {
+    .cambio {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cambio {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+/* Contactos */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffff;
+    transition: opacity 500ms;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 900px;
+    margin: 2rem;
+    z-index: 100;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay .container {
+    position: relative;
+    z-index: 4;
+    color: #CD6F2E;
+}
+
+#cerrar {
+    position: absolute;
+    color: #CD6F2E;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: 5rem;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+}
+
+.contact .social-networks {
+    display: flex;
+}
+
+.contact h2 {
+    font-weight: 300;
+    color: #000;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#isra-email {
+    font-size: 3rem;
+    text-align: center;
+}

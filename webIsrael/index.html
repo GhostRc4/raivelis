@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="CherryBox">
+    <!--  visit www.cherryboxs.com -->
+    <meta name="description" content="Diseñador publicitario, servicios de Marketing digital, branding">
+    <meta name="keywords" content="diseñador, desinger, marketing, branding ">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Israel Velis </title>
+    <script type="text/javascript">
+        function visualiza_primero() {
+            document.getElementById('primero').style.visibility = 'visible';
+            document.getElementById('primero').style.display = 'block';
+            document.getElementById('segundo').style.visibility = 'hidden';
+            document.getElementById('segundo').style.display = 'none';
+        };
+
+        function visualiza_segundo() {
+            document.getElementById('segundo').style.visibility = 'visible';
+            document.getElementById('segundo').style.display = 'block';
+            document.getElementById('primero').style.visibility = 'hidden';
+            document.getElementById('primero').style.display = 'none';
+        };
+    </script>
+    </script>
+</head>
+
+<body class="yellow-background">
+    <div class="circles-parallax">
+        <div class="site-header section">
+
+            <div class="bar">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="Logo Web">
+                        </a>
+                    </div>
+                    <input type="checkbox" id="btn-menu">
+                    <label for="btn-menu"> <img src="img/mobile-menu.png" alt=""></label>
+                    <nav class="navigation-bar yellow-background-nav">
+                        <ul class="web-pages">
+                            <li>
+                                <a href="index.html"> Inicio </a>
+
+                            </li>
+                            <li>
+                                <a href="projects.html"> Proyectos </a>
+                            </li>
+                            <li>
+                                <a href="#contactos"> Contactos</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                    <div class="social-networks">
+                        <ul>
+                            <li>
+                                <a href=""><img src="img/facebook-logo.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="img/behance.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="img/instagram-logo.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="header-message">
+                <div class="container">
+
+
+                    <h1 class="title title-yellow title-animations center-elements"> Aún hay cosas por descubrir </h1>
+                </div>
+
+            </div>
+
+        </div>
+
+        <main class=" main section ">
+            <div class="container center-elements ">
+                <div class="columns-2 ">
+                    <div class="descriptive-element-1 descriptive-element element-1 ">
+                        <p class=" "> Hola, mi <br> nombre es <span> Israel.</span> <br> Soy<span> disenador grafico <br> publicitario.</span></p>
+
+                    </div>
+                    <div class="descriptive-element-2 element-2 ">
+                        <div class="image">
+                            <img src="img/israel.png" alt="Foto del Israel Velis ">
+                        </div>
+                        <div class="name ">
+                            <h2 class="title title-yellow center-elements title-animations text-center"> Israel <br> Velis </h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <div class="more-discover section ">
+            <div class="container center-elements ">
+                <div class="columns-2 ">
+                    <div class="descriptive-element-1  element-1 ">
+                        <h3 class="title title-yellow  title-animations hola"> Piensa <br> Crea <br> Impacta <br>
+                            <span class="title-2 repeat-section"> Repeat <button type="button"  class="cambio" onclick="visualiza_segundo()"> <img src="img/repeat.png" alt=""></button></span>
+                        </h3>
+
+
+                    </div>
+                    <div class="descriptive-element descriptive-element-2 element-2 ">
+                        <p id="primero" style="visibility: visible; display: block;"> Disfruto crear <span> experiencias unicas, impactantes y de gran valor</span></p>
+                        <p id="segundo" style="visibility: hidden; display: none; transition: all 3s;"> Desarrollo ideas fuera de lo <span> común </span></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="section ">
+            <div class="container center-elements ">
+                <div class="your-idea ">
+                    <h2 class="title title-animations title-yellow center-elements text-center"> ¿cuál es <br> tu idea? </h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="contact  overlay" id="contactos">
+        <div class="container center-elements">
+            <div class="contact-media">
+                <div class="email">
+                    <h2> Contacto </h2>
+                    <h3 id="isra-email"> israel.velis@raivelis.com</h3>
+                </div>
+
+            </div>
+
+        </div>
+        <a id="cerrar" href="#"> &times; </a>
+    </div>
+
+</body>
+
+
+</html>
